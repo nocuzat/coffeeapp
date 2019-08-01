@@ -1,0 +1,45 @@
+ion-card{
+position:relative;
+text-align: center;
+}
+.card-title{
+    position: absolute;
+    top:36%;
+    font-size: 2.0em;
+    width:100%;
+    font-weight:bold;
+    color:#fff;
+}
+.card-subtitle{
+    font-size:2.0em;
+    position:absolute;
+    top:52%;
+    width: 100%;
+    font-weight:bold;
+    color:#fff;
+}
+
+
+
+.card-title1{
+    position: absolute;
+    top:36%;
+    font-size: 2.0em;
+    width:100%;
+    font-weight:bold;
+    color:#000;
+}
+.card-subtitle1{
+    font-size:2.0em;
+    position:absolute;
+    top:52%;
+    width: 100%;
+    font-weight:bold;
+    color:#000;
+}
+
+
+
+ion-content.background{
+    --background: url(/assets/wood.jpg) 0 0/100% 100% no-repeat;
+}

@@ -1,0 +1,107 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title>Place Your order</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="background">
+  <ion-card color="danger">
+    <ion-card-header>
+      Coffee Cups<br><br>
+      <ion-progress-bar color="primary" value="{{stat}}"></ion-progress-bar>
+      </ion-card-header>
+  </ion-card>
+
+  <ion-card color="danger">
+    <ion-card-header>
+      Selected coffee
+    </ion-card-header>
+    <ion-card-content>
+      coffee:&nbsp;{{coffee}}&nbsp;&nbsp;R{{price}}
+    </ion-card-content>
+  </ion-card>
+
+
+  <ion-card color="danger">
+      <ion-list>
+          <ion-radio-group [(ngModel)]="packets">
+            <ion-list-header>
+              Sugar:
+            </ion-list-header>
+    
+            <ion-item>
+              <ion-label>1 Packet </ion-label>
+              <ion-radio value="1 Packet" ></ion-radio>
+            </ion-item>
+        
+            <ion-item>
+              <ion-label>2 Packets</ion-label>
+              <ion-radio value="2 Packets"></ion-radio>
+            </ion-item>
+        
+            <ion-item>
+              <ion-label>3 Packets</ion-label>
+              <ion-radio value="3 Packets"></ion-radio>
+            </ion-item>
+        
+            <ion-item>
+              <ion-label>4 Packets</ion-label>
+              <ion-radio value="4 Packets"></ion-radio>
+            </ion-item>
+        
+            <ion-item>
+              <ion-label>5 Packets</ion-label>
+              <ion-radio value="5 Packets"></ion-radio>
+            </ion-item>
+          </ion-radio-group>
+        </ion-list>
+            </ion-card>
+
+
+            <ion-card color="danger">
+                <ion-list>
+                    <ion-radio-group [(ngModel)]="extras">
+                      <ion-list-header>
+                        Extras:
+                      </ion-list-header>
+              
+                      <ion-item>
+                        <ion-label>Pancake </ion-label>
+                        <ion-radio value="Pancake" ></ion-radio>
+                      </ion-item>
+                  
+                      <ion-item>
+                        <ion-label>Muffin</ion-label>
+                        <ion-radio value="Muffin"></ion-radio>
+                      </ion-item>
+                  
+                      <ion-item>
+                        <ion-label>Biscuits</ion-label>
+                        <ion-radio value="Biscuits"></ion-radio>
+                      </ion-item>
+                  
+                      <ion-item>
+                        <ion-label>Cake slice</ion-label>
+                        <ion-radio value="Cake slice"></ion-radio>
+                      </ion-item>
+                  
+                      <ion-item>
+                        <ion-label>Pizza slice</ion-label>
+                        <ion-radio value="Pizza slice"></ion-radio>
+                      </ion-item>
+                    </ion-radio-group>
+                  </ion-list>
+                      </ion-card>
+
+
+  <ion-button color="danger" shape="round" expand="full" (click)="onOrder()"> Place Order</ion-button>
+
+</ion-content>
+
+<ion-footer>
+    <ion-toolbar color="danger">
+      <ion-title>
+        Coffee Time
+      </ion-title>
+    </ion-toolbar>
+  </ion-footer>

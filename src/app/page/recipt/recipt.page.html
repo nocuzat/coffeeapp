@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title>Coffee Time</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="background">
+    <ion-card color="danger" >
+        <ion-card-header>
+          Receipt
+        </ion-card-header>
+        <ion-card-content>
+            <table width="100%">
+                <tr>
+                  <td><b>Ordered Items</b></td>
+                  <td><b>Price</b></td>
+                </tr>
+                <tr>
+                  <td>{{coff}}</td>
+                  <td>R{{pric}}</td>
+                </tr>
+                <tr>
+                  <td>{{pack}}</td>
+                  <td>R{{tots}}</td>
+                </tr>
+                <tr>
+                  <td>{{extra}}</td>
+                  <td>R{{tot}}</td>
+                </tr>
+                <tr>
+                  <td><b>Total Amount</b></td>
+                  <td><b>R{{total}}</b></td>
+                </tr>                
+            </table>
+
+        </ion-card-content>
+      </ion-card>
+
+      <ion-button color="danger" shape="round" expand="full" (click)="onHome()">Done</ion-button>
+
+</ion-content>
+
+
+
+<ion-footer>
+    <ion-toolbar color="danger">
+      <ion-title>
+        Coffee Time
+      </ion-title>
+    </ion-toolbar>
+  </ion-footer>

@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title>coffee Time</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="background">
+  <ion-card color="danger">
+     <ion-card-header>
+        Coffee Cups<br><br>
+        <ion-progress-bar color="primary" value="{{stat}}"></ion-progress-bar>
+     </ion-card-header>
+  </ion-card>
+
+  <ion-card>
+      <img src="/assets/capuccino.jpeg" (click)="goCapuccino()" value="capuccino"/>
+      <div class ="card-title1"(click)="goCapuccino()" value="capuccino">Capuccino</div>
+      <div class="card-subtitle1"(click)="goCapuccino()" value="capuccino">R25</div>
+  </ion-card>
+
+  <ion-card>
+      <img src="/assets/espresso.jpg"(click)="goEspresso()" value="espresso"/>
+      <div class ="card-title1"(click)="goEspresso()" value="espresso">Espresso</div>
+      <div class="card-subtitle1"(click)="goEspresso()" value="espresso">R30</div>
+  </ion-card>
+
+
+  <ion-card>
+      <img src="/assets/americano.jpg"(click)="goAmericano()" value="americano"/>
+      <div class ="card-title"(click)="goAmericano()" value="americano">Americano</div>
+      <div class="card-subtitle"(click)="goAmericano()" value="american">R50</div>
+  </ion-card>
+
+
+
+  <ion-card>
+      <img src="/assets/latte.jpg"(click)="goLatte()" value="latte"/>
+      <div class ="card-title1"(click)="goLatte()" value="latte">Latte</div>
+      <div class="card-subtitle1"(click)="goLatte()" value="latte">R20</div>
+  </ion-card>
+
+
+  <ion-card>
+      <img src="/assets/mocha.jpg"(click)="goMocha()" value="mocha"/>
+      <div class ="card-title1"(click)="goMocha()" value="mocha">Mocha</div>
+      <div class="card-subtitle1"(click)="goMocha()" value="mocha">R45</div>
+  </ion-card>
+
+
+
+</ion-content>
+
+
+<ion-footer>
+    <ion-toolbar color="danger">
+      <ion-title>
+        Coffee Time
+      </ion-title>
+    </ion-toolbar>
+  </ion-footer>
