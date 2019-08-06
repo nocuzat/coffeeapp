@@ -17,6 +17,7 @@ price
 stat
 packets
 extras
+name
   constructor(private route: ActivatedRoute,private router: Router) { 
     this.coffee=""
     this.price=0
@@ -76,7 +77,7 @@ console.log(this.price)
 
 onOrder(){
   this.router.navigateByUrl("recipt")
-  this.router.navigate(['/recipt'], { queryParams: { coffee: this.coffee,price:this.price,packets:this.packets,extras:this.extras } });
+  this.router.navigate(['/recipt'], { queryParams: { coffee: this.coffee,price:this.price,packets:this.packets,extras:this.extras,name:this.name } });
 }
 
 }

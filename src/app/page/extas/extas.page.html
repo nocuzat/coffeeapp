@@ -9,7 +9,12 @@
     <ion-card-header>
       Coffee Cups<br><br>
       <ion-progress-bar color="primary" value="{{stat}}"></ion-progress-bar>
-      </ion-card-header>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-textarea placeholder="Enter your full name" [(ngModel)]="name"></ion-textarea>
+      </ion-item>
+    </ion-card-content>
   </ion-card>
 
   <ion-card color="danger">

@@ -18,6 +18,7 @@ tot:number;
 total:number;
 tots:number;
 totals
+nme
 
 
 
@@ -46,7 +47,8 @@ totals
     this.extra = params.extras
     console.log(this.extra)
    
-
+    this.nme = params.name
+    console.log(this.nme)
 
   })
 
